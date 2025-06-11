@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Document</title>
+        <style>
+            .container{
+            /* height:100vh;  */
+            width:100%;
+            background-color: rgba(211, 211, 211, 0.315);
+        }
+        .linkes{
+        color: rgba(211, 211, 211, 0.315);
+        
+        }
+        .headers{
+            /* height:60px;
+            width:100%; */
+            width:100%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            gap:100px;
+            padding-top:20px;
+            background-color: white;
+            /* margin-bottom: -200px; */
+            top:0;
+            /* border: 2px solid black; */
+            
+            
+        }
+        @media(max-width:600px){
+
+        }
+        .flip{
+        height:60px;
+        width:10%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        font-weight:bolder;
+        font-size:10px;
+        padding-left:20px;
+        margin-top:10px;
+    }
+    *{
+        padding:0;
+        margin:0;
+    }
+    .hea{
+        color:blue;
+        font-size:20px;
+        font-weight: bolder;
+        opacity: 0.7;
+    }
+    .inp{
+        /* width:100%; */
+
+        /* height:40px; */
+        align-self:center;
+        /* border-top-right-radius: 10%; */
+        border:none;
+        box-shadow: 2px white;
+        background-color:ghostwhite;
+        /* border-bottom-right-radius: 10%; */
+        border-radius:10px;
+        padding: 10px;
+        width:1000px;
+        font-size:20px;
+    }
+    .se{
+        height:40px;
+        width:30px;
+        text-align: center;
+        background-color:ghostwhite;
+
+        padding:0 1rem;
+        align-content: center;
+    align-self: center;
+    margin-left:40px;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    }
+    .us{
+        align-self: center;
+                font-size:20px;
+        margin-left:20px;
+    }
+    #cars{
+        margin-left:10px;
+        text-decoration: none;
+        border: none;
+        font-size:16px;
+        font-weight:300;
+    }
+    .carts{
+        font-size:20px;
+        align-self: center;
+        margin-left:20px;
+
+    }
+    .carts2{
+        font-size:20px;
+        align-self: center;
+        font-weight: 100;
+        margin-left:10px;
+
+    }
+    .shop{
+        font-size:20px;
+        align-self:center;
+        margin-left: 20px;
+    }
+    .seller{
+        font-size:20px;
+        align-self: center;
+        margin-left:10px;
+        font-weight: 100;
+    }
+    .exp{
+        color:lightslategray;
+        font-size:12px;
+        padding:0;
+        margin:0;
+        padding-bottom:20px;
+    }
+    span{
+        color:rgb(246, 246, 3);
+
+    }
+    #items{
+        /* height:140px;
+        width:95%; */
+        margin:0 auto;
+        /* border:2px solid black; */
+        display:flex;
+        margin-top:120px;
+        justify-content: space-evenly;
+        background-color: white;
+        font-weight: 300;
+        /* align-content: center; */
+        /* align-content: center; */
+    }
+    .box-1{
+        align-self: center;
+        height:120px;
+        width:100px;
+        /* justify-self: center; */
+        align-items: center;
+        /* margin:0 auto;   */
+        display: flex;
+        /* text-align: center
+        ; */
+        justify-self: center;
+        flex-wrap: wrap;
+        align-self: center;
+        /* border:2px solid black; */
+    }
+    .box-2{
+        align-self: center;
+        height:120px;
+        width:100px;
+        /* border:2px solid black; */
+    }
+    .box-3{
+        align-self: center;
+        height:120px;
+        width:100px;
+        /* border:2px solid black; */
+    }
+    .box-4{
+        align-self: center;
+        height:120px;
+        width:100px;
+        /* border:2px solid black; */
+    }
+    .box-5{
+        height:120px;
+        align-self: center;
+        width:100px;
+        /* border:2px solid black; */
+    }
+    .box-6{
+        align-self: center;
+        height:120px;
+        width:100px;
+        /* border:2px solid black; */
+    }
+    .box-7{
+        align-self: center;
+        height:120px;
+        width:100px;
+        /* border:2px solid black; */
+    }
+    .box-8{
+        align-self: center;
+        height:120px;
+        width:100px;
+        /* border:2px solid black; */
+    }
+    .box-9{
+        align-self: center;
+        height:120px;
+        width:100px;
+        /* border:2px solid black; */
+    }
+    .imgg{
+        height:80px;
+        width:100%;
+        /* border:2px solid black; */
+    }
+    .cont{
+        display: flex;
+        justify-content: center;
+        /* border:2px solid black; */
+        width:100%;
+        /* align-self: center; */
+        /* align-content: center; */
+        
+
+        font-weight: bolder;
+        height:30px;
+    }
+    .slider{
+        height:200px;
+        margin-top:10px;
+        width:100%;
+        /* border:2px solid black; */
+        background-repeat: no-repeat;
+        background-size:cover;
+        /* background-position-y: -200px; */
+        /* fill-opacity: 1; */
+        /* opacity: 1; */
+        background-image: url('back.webp');
+    }
+    .boxes{
+        height:280px;
+        width:80%;
+        /* border:2px solid black; */
+        margin-top:10px;
+        /* margin-left: 20px ; */
+        display: flex;
+
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .mainbox{
+        /* height:300px; */
+        margin-top:10px;
+        /* width:100%; */
+        /* border:2px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .boxes1{
+        height: 280px;
+        margin-top:10px;
+        width:20%;
+        /* border:2px solid black; */
+        background-color:rgb(0, 60, 255);
+        
+    }
+    @media(max-width:480px){
+        .boxes1{
+            display:block;
+             width:80%;
+            margin:2rem 0;
+            background-color:whitesmoke;
+            /* 
+            padding:3rem; */
+        }
+        .chill1{
+            height:20px;
+            /* background-color:whitesmoke; */
+            width:80%;
+        }
+    }
+    .mains{
+        height:40px;
+        width:100%;
+        /* border:2px solid black; */
+
+    }
+    .boxess1{
+        height:220px;
+        width:20%;
+        /* border:2px solid black; */
+    }
+    .boxess2{
+        height:220px;
+        width:25%;
+        /* border:2px solid black; */
+    }
+    .boxess3{
+        height:220px;
+        width:25%;
+        /* border:2px solid black; */
+    }
+    .boxess4{
+        height:220px;
+        width:25%;
+        /* border:2px solid black; */
+    }
+    .boxess5{
+        height:220px;
+        width:25%;
+        /* border:2px solid black; */
+    }
+    .child1{
+        height:160px;
+        width:100%;
+        /* border:2px solid black; */
+    }
+    .child2{
+        height:60px;
+        width:100%;
+        /* border:2px solid black; */
+        text-align: center;
+    }
+    .chi-img{
+        height: 100%;
+        width:100%;
+    }
+    .pp{
+        margin-top:15px;
+    }
+    .children{
+        height: 240px;
+        width:80%;
+        /* border: 2px solid black; */
+        /* display: flex; */
+        margin:0 auto;
+        margin-top:20px;
+        border-radius: 5%;
+        /* outline-color: yellow;
+        outline-style:inset;
+        outline-width: thin; */
+        align-self: center;
+    }
+    .chilll1{
+        height:120px;
+        width:80%;
+        border-radius: 5%;
+        margin: 0 auto;
+        margin-top:10px;
+        
+        /* border:2px solid black; */
+    }
+    .chilll2{
+        height:30px;
+        width:80%;
+        border-radius: 5%;
+        margin: 0 auto;
+        margin-top:10px;
+        /* border:2px solid black; */
+        
+ }
+ .chill-1{
+    height: 280px;
+    /* margin-bottom: 300px; */
+    width:100%;
+ }
+ #items-2{
+    height:160px;
+        width:100%;
+        /* margin:0 auto; */
+        /* border:2px solid black; */
+        display:flex;
+        justify-content: space-evenly;
+        margin-top:20px;
+        margin-left:20px;
+        /* border-radius:2%; */
+        /* background-color: white; */
+        font-weight: 300;
+ }
+ .itemsmains{
+    display:block;
+    background-color:white;
+    /* border:2px solid black; */
+    width:70%;
+ }
+ .bigimg{
+    height:380px;
+    /* width:80%; */
+    margin-left:40px;
+    width:25%;
+    background-color:blue;
+    /* border:2px solid black; */
+}
+ .big{
+     height:400px;
+     width:100%;
+     margin-top: 20px;
+     /* border:2px solid black; */
+     display:flex;
+    }
+    .bakimgg{
+        height:380px;
+        width:100%;
+
+    }
+    .description{
+        width:90%;
+        color:gray;
+        margin-left:20px;
+        padding:20px;
+    }
+    footer{
+        /* height:400px;
+        width: 100%; */
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        /* border:2px solid black; */
+        background-color:rgba(0, 0, 0, 0.823);
+        color:white;
+        font-weight: 200;
+    }
+    .foo{
+        height:260px;
+        width:15%;
+        /* border:2px solid black; */
+        /* text-align:center; */
+        padding-left:20px;
+        padding-top:30px;
+
+    }
+    .foo1{
+        display:block;
+    }
+@media(max-width:600px){
+    .medium{
+        display:none;
+    }
+    .inp{
+        width:100px;
+        
+    }
+}
+    .medium
+    {
+        height:300px;
+        width:3px;
+        background-color:grey;
+    }
+    .main_head{
+        color:gray;
+        margin-bottom:20px;
+        font-size:13px;
+    }
+    .icons-1{
+        display: flex;
+        font-size:20px;
+        /* justify-content: space-evenly; */
+        background-color:black;
+        margin-top:30px;
+    }
+    .icons{
+        margin-right: 10px;
+        /* background-color:white; */
+        color:white;
+    }
+    .last{
+        /* height:60px;
+        width:100%; */
+        /* border:2px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* border:2px solid green; */
+        padding-left: 20px;
+        margin:1.2rem 0;
+    }
+    .lastka{
+        height:1px;
+       background-color:gray;
+        width:100%;
+    }
+    .boxl{
+        height:50px;
+        width:10%;
+        /* border:2px solid black; */
+    }
+    .lastbox1{
+        display:flex;
+        flex-wrap:wrap;
+        text-align: center;
+        padding:10px 0 0 20px;
+    }
+    .lastshop{
+        margin-left:20px;
+        /* margin-top:20px */
+        margin-right:10px;
+    }
+    .lastbox2{
+        display: flex;
+        padding:20px 0 0 20px;
+        flex-wrap:wrap;
+    }
+    .laststar{
+        margin-right: 20px;
+    }
+    .lastbox3{
+        display:flex;
+        flex-wrap:wrap;
+        padding:20px 0 0 20px;
+    }
+    .lastbox4{
+        display:flex;
+        flex-wrap:wrap;
+        padding:20px 0 0 20px;
+        
+    }
+    .lastbox5{
+        flex-wrap:wrap;
+        display:flex;
+        padding:20px 0 0 20px;
+
+    }
+    .lastc{
+        margin-right: 10px;
+    }
+    .lastque{
+        margin-right:10px;
+    }
+    .lastbox6{
+        display: flex;
+        width:20%;
+
+        /* border:2px solid black; */
+    }
+    @media(max-width:400px){
+        .lastiim,.lastbox6{
+            display:none;
+        }
+        .lastbox5
+        {
+            display:none;
+        }
+    }
+    *{
+        border:none;
+    }
+    .lastiim{
+        /* font-size:20px; */
+        height:20px;
+        /* margin-t */
+        align-self: center;
+        /* width:20px; */
+    }
+    @media(max-width:600px)
+    {
+        .headers{
+            /* height:60px;
+            
+            width:100%; */
+            /* width:0; */
+            display: flex;
+            /* height:120px;
+            
+            width:50%; */
+            border:none;
+            gap:0;
+            flex-wrap:wrap;
+            margin-bottom:  600px;
+        }
+        #cars,.seller,.carts2{
+            display: none;
+        }
+        .us{
+            visibility: hidden;
+        }
+        .inp{
+            align-items: center;
+            /* padding:100px 200px; */
+            /* margin-left:60px; */
+        }
+    }
+    @media( min-width:0) and (max-width:600px)
+    {
+        #items{
+            /* height:480px;
+        width:100%; */
+        /* margin:0 auto; */
+        /* border:2px solid black; */
+        display:flex;
+        margin-top:200px;
+        /* justify-content: space-evenly; */
+        background-color: white;
+        /* border:2px solid black; */
+        flex-wrap: wrap;
+        font-weight: 300;
+        }
+    }
+    /* @media(max-width:400px)
+    {
+        #items{
+            height:280px;
+        width:100%;
+        /* margin:0 auto; */
+        /* border:2px solid black; */
+        /* display:flex; */
+        /* margin-top:200px; */
+        /* justify-content: space-evenly; */
+        /* background-color: white;
+        border:2px solid black;
+        flex-wrap: wrap;
+        font-weight: 300; */
+        /* } */
+    /* } */ */
+    /* .foomain{
+        display:flex; */
+        /* flex-wrap:wrap; */
+    /* } */
+    #foomain{
+        display: flex;
+        flex-wrap: wrap;
+        height:auto;
+        width:100%;
+        border:9px solid wheat;
+        opacity: 1;
+    }
+    @media(max-width:600px){
+        .lastka{
+            display: none;
+        }
+    }
+    footer{
+        display:flex;
+        flex-wrap:wrap;
+
+        /* flex-wrap:wrap; */
+        /* height:0; */
+    }
+    .foo5{
+        display: flex;
+        flex-wrap:wrap;
+        overflow: hidden;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+      
+        <header>
+        <div class="headers">
+            
+             <div class="flip"><!-- <p class="hea"><h2 class="hea"> Flipkart</h2></p> -->
+                <img src="flipkart.svg" alt="">
+            <!-- <P  class="exp">Explore <span>plus</span></P> -->
+            </div>
+            <i class="fas fa-search se"></i>
+            <input type="text" class="inp" placeholder="Search for Product , Brands and More">
+            <i class="fa fa-user us" aria-hidden="true" ></i>
+
+            <select id="cars">
+                <option value="volvo">Log in</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <i class="fa-solid fa-cart-shopping carts"></i>
+              <P class="carts2">Cart</P>
+              <i class="fa-solid fa-shop shop"></i>
+              <p class="seller">Become a seller</p>
+        </div>
+    </header>
+    <div id="items">
+        <div class="box-1">
+            <img src="grocary.webp" class="imgg" alt="">
+            <div class="cont">
+            <p>Grocary</p>
+        </div>
+        </div>
+        <div class="box-2">
+            <img src="plane.webp" class="imgg" alt="">
+            <div class="cont">
+                <p>Grocary</p>
+            </div>
+        </div>
+        <div class="box-3">
+        <img src="mobile.webp" class="imgg" alt="">
+        <div class="cont">
+            <!-- <p>Grocary</p> -->
+            <select id="cars">
+                <option value="volvo">Log in</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+        </div>
+    </div>
+    <div class="box-4">
+            <img src="appliance.webp" class="imgg" alt="">
+            <div class="cont">
+                <!-- <p>Grocary</p> -->
+                <select id="cars">
+                    <option value="volvo">Log in</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+            </div>
+            
+        </div>
+        <div class="box-5">
+            <img src="cars.webp" class="imgg" alt="">
+            <div class="cont">
+                <!-- <p>Grocary</p> -->
+                <select id="cars">
+                    <option value="volvo">Log in</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+            </div>
+            
+        </div>
+        <div class="box-6">
+            <img src="fashion.webp" class="imgg" alt="">
+            <div class="cont">
+                <p>Grocary</p>
+            </div>
+            
+        </div>
+        <div class="box-7">
+            <img src="sport.webp" class="imgg" alt="">
+            <div class="cont">
+                <p>Grocary</p>
+            </div>
+            
+        </div>
+        <div class="box-8">
+            <img src="home.webp" class="imgg" alt="">
+            <div class="cont">
+                <!-- <p>Grocary</p> -->
+                <select id="cars">
+                    <option value="volvo">Log in</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+            </div>
+            
+        </div>
+        <div class="box-9">
+            <img src="gift.webp" class="imgg" alt="">
+            <div class="cont">
+                <!-- <p>Grocary</p> -->
+                <select id="cars">
+                    <option value="volvo">Log in</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+            </div>
+
+        </div>
+    </div>
+    <div class="slider">
+
+    </div>
+    <div class="mainbox">
+    <div class="boxes">
+        <div class="mains"><h2>Best of Electronic</h2></div>
+        <div class="boxess1">
+            <div class="child1">
+                <img src="appliance.webp" class="chi-img" alt="">
+            </div>
+            <div class="child2">
+                <p class="pp">boats smartwatchis</p>
+                <p><b class="boll">From ₹1,099</b></p>
+            </div>
+        </div>
+        <div class="boxess2">
+            <div class="child1">
+                <img src="laptop.jpg" class="chi-img" alt="">
+            </div>
+            <div class="child2">
+                <p class="pp">boats smartwatchis</p>
+                <p><b class="boll">From ₹1,099</b></p>
+            </div>
+        </div>
+        <div class="boxess3"> 
+            <div class="child1">
+                <img src="mobiles.jpg" class="chi-img" alt="">
+            </div>
+            <div class="child2">
+                <p class="pp">boats smartwatchis</p>
+                <p><b class="boll">From ₹1,099</b></p>
+            </div>
+        </div>
+        <div class="boxess4">
+            <div class="child1">
+                <img src="watch.jpg" class="chi-img" alt="">
+            </div>
+            <div class="child2">
+                <p class="pp">boats smartwatchis</p>
+                <p><b class="boll">From ₹1,099</b></p>
+            </div>
+        </div>
+        <div class="boxess5">
+            <div class="child1">
+                <img src="ledtv.jpg" class="chi-img" alt="">
+            </div>
+            <div class="child2">
+                <!-- <img src="watch.jpg" class="chi-" alt=""> -->
+                <p class="pp">boats smartwatchis</p>
+                <p><b class="boll">From ₹1,099</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="boxes1">
+        <!-- <div class="children"> -->
+            <!-- <div class="chilll1"> -->
+                <img src="flight.webp" alt="" class="chill-1">
+            <!-- </div> -->
+            <!-- <div class="chilll2"></div>
+            <div class="chilll3"></div> -->
+        <!-- </div> -->
+    </div>
+</div>
+<div class="big">
+<div class="itemsmains">
+<div id="items-2">
+    <div class="box-1">
+        <img src="tsert.jpg" class="imgg" alt="">
+        <div class="cont">
+        <p>Grocary</p>
+    </div>
+    </div>
+    <div class="box-2">
+        <img src="ear.jpg" class="imgg" alt="">
+        <div class="cont">
+            <p>Grocary</p>
+        </div>
+    </div>
+    <div class="box-3">
+    <img src="begs.jpg" class="imgg" alt="">
+    <div class="cont">
+        <!-- <p>Grocary</p> -->
+        <select id="cars">
+            <option value="volvo">Log in</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+    </div>
+</div>
+<div class="box-4">
+        <img src="grocarys.jpg" class="imgg" alt="">
+        <div class="cont">
+            <!-- <p>Grocary</p> -->
+            <select id="cars">
+                <option value="volvo">Log in</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+        </div>
+    </div>
+
+        
+    </div>
+
+    <div id="items-2">
+        <div class="box-1">
+            <img src="grocarys.jpg" class="imgg" alt="">
+            <div class="cont">
+            <p>Grocary</p>
+        </div>
+        </div>
+        <div class="box-2">
+            <img src="jense.jpg" class="imgg" alt="">
+            <div class="cont">
+                <p>Grocary</p>
+            </div>
+        </div>
+        <div class="box-3">
+        <img src="tsert.jpg" class="imgg" alt="">
+        <div class="cont">
+            <!-- <p>Grocary</p> -->
+            <select id="cars">
+                <option value="volvo">Log in</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+        </div>
+    </div>
+    <div class="box-4">
+            <img src="jwellery.jpg" class="imgg" alt="">
+            <div class="cont">
+                <!-- <p>Grocary</p> -->
+                <select id="cars">
+                    <option value="volvo">Log in</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+            </div>
+        </div>
+    
+            
+        </div>
+</div>
+<div class="bigimg">
+<img src="sale50.jpg" class="bakimgg" alt="">
+</div>
+</div>
+<div class="description">
+    <div><h2>Flipkart: The One-stop Shopping Destination</h2></div>
+    <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. </p>
+    <div><h2>Flipkart Plus</h2></div>
+    <p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp; non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! </p>
+    <br>
+    <br>
+    <p>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:</p>
+    <br>
+    An annual Zomato Gold membership
+    <br>
+    <p>Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</p>
+    <br>
+    <div><h2>No Cost EMI</h2></div>
+    <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+    <br>
+    <br>
+    <div><h2>EMI on Debit Cards</h2></div>
+    <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. </p>
+    <br>
+    <br>
+    <div><h2>What Can You Buy From Flipkart?</h2></div>
+    <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - </p>
+    <div><h2>Electronic Devices and Accessories</h2></div>
+    <p>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our </p>
+    <br>
+    <b>Back To College Store</b>
+    segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+    <br>
+    Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. 
+    <br>
+    <br>
+    Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
+    <br>
+    <br>
+    How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.
+    <br>
+    <br>
+    <div><h2>Large Appliances</h2></div>
+    Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our 
+    <b>Dependable TV and Appliance Store</b>
+    ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.
+    <br>
+    <br>
+    For certain product categories, Customers meeting the eligibility criteria will have the option to buy larger quantities. To know more on the eligibility criteria and terms and conditions, please reach out to 
+    <a href="mailto:Purchases.oni@flipkart.com" class="linkes">Purchases.oni@flipkart.com</a>
+    ". "
+    <br>
+    <br>
+    <div>
+        <h2>Small Home Appliances</h2>
+
+    </div>
+    Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.
+    <br>
+    <br>
+    <div>Lifestyle</div>
+    ".Flipkart"
+    <b>'India ka Fashion Capital'</b>
+    , is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.
+    <br>
+    <br>
+</div>
+<div id="foomain">
+<footer>
+    <div class="foo1 foo">
+        <p class="main_head">ABOUT</p>
+        <p><b>Contact us</b></p>
+        <p><b>About us</b></p>
+        <p><b>Careers us</b></p>
+        <p><b>Flipkart Stories us</b></p>
+        <p><b>Press</b></p>
+        <p><b>Corporative Information</b></p>
+    </div>
+    <div class="foo2 foo">
+        <p class="main_head">GROUP COMPNIES</p>
+        <p><b>Myntra</b></p>
+        <p><b>Shopsy</b></p>
+        <p><b>Flipkart</b></p>
+        
+    </div>
+    <div class="foo3 foo">
+        <p class="main_head">HELP</p>
+        <p><b>Payment us</b></p>
+        <p><b>Shipping</b></p>
+        <p><b>Cancelation and Return</b></p>
+        <p><b>FAQ</b></p>
+        <p><b>Report Infringment</b></p>
+    </div>
+    <div class="foo4 foo"> <p class="main_head">CONSUMER POLICY</p>
+        <p><b>Cancelation and Return</b></p>
+        <p><b>terms of  us</b></p>
+        <p><b>Security</b></p>
+        <p><b>Privacy</b></p>
+        <p><b>Sitemap</b></p>
+        <p><b>Grivence Reddressel</b></p>
+        <p><b>ERP Compliance</b></p>
+
+    </div>
+    <hr class="medium">
+    <div class="foo5 foo">
+        <p class="main_head">ABOUT</p>
+        <p><b>Contact us</b></p>
+        <p><b>About us</b></p>
+        <p><b>Careers us</b></p>
+        <p><b>Flipkart Stories us</b></p>
+        <p class="icons-1">
+            <p>Social</p> <br><b><i class="fa-brands fa-facebook icons"></i> <i class="fa-solid fa-x icons"></i><i class="fa-brands fa-youtube icons"></i></b></p>
+ 
+    </div>
+    <div class="foo6 foo">
+        <p class="main_head">ABOUT</p>
+        <p><b>Contact us</b></p>
+        <p><b>About us</b></p>
+        <p><b>Careers us</b></p>
+        <p><b>Flipkart Stories us</b></p>
+        <p><b>Press</b></p>
+        <p><b>Corporative Information</b></p>
+    </div>
+    <hr class="lastka">
+    <div class="last">
+        <div class="lastbox1 boxl">  <i class="fa-solid fa-shop lastshop"></i><p>Become a sellersa</p></div>
+        <div class="lastbox2 boxl">
+            <i class="fa-regular fa-star laststar"></i>
+            <p>Advertice</p>
+        </div>
+        <div class="lastbox3 boxl">
+            <i class="fa-solid fa-gift laststar"></i>
+            <p>Gift code</p>
+        </div>
+        <div class="lastbox4 boxl">
+            <i class="fa-solid fa-question lastque"></i>
+            <p>Help Centere</p>
+        </div>
+        <div class="lastbox5 boxl">
+            <i class="fa-solid fa-c lastc"></i>
+            <p>2007-2024 Flipkart.com</p>
+        </div>
+        <div class="lastbox6 boxl">
+            <img src="footerimg1.svg" alt="" class="lastiim">
+        </div>
+        <!-- <i class="fa-solid fa-shop"></i> -->
+    </div>
+    </footer>
+    </div>
+</div>
+<script>
+    
+</script>
+</body>
+</html>

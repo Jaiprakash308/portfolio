@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaiprakasah - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style:normal;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+/* position:sticky-fixed; */
+            background-color: rgb(0, 0, 80);
+        }
+
+        nav ul {
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 23px;
+            list-style: none;
+            /* text-decoration:none; */
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin:50px 0;
+            align-items: center;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            /* background-color: red; */
+            margin: 30px 0;
+        }
+
+        /* .rightSection{ */
+        /* background-color: red; */
+        /* } */
+        .firstSection>div {
+            width: 30%;
+            /* border:33px solid white; */
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 23px 0;
+        }
+
+        .purple {
+            color: rgb(43, 36, 185);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a :hover {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        #element {
+            color: rgb(43, 36, 185);
+        }
+        .secondSection{
+            max-width:80vw;
+            margin:auto;
+            /* border:2px solid black; */
+            height:60vh;
+        }
+        main hr
+        {
+            border:0;
+            background: #9c97f1;
+            height:1.3px;
+            margin:40px 84px;
+        }
+        .text-gray{
+            color:gray;
+        }
+        .secondSection .box{
+            background-color:white;
+            width:80vw;
+            height:2px;
+            margin-top:1rem;
+            display: flex;
+            /* margin:56px 0; */
+                 }
+        .secondSection .verticle{
+            height:300px;
+            width:80%;
+            position: relative;
+            top:23px;
+  
+            /* background-color: blue; */
+           /* margin-top:10rem; */
+            margin:0 100px;
+            /* border:3px solid black; */
+        }
+        .image-top{
+            width:34px;
+            position: relative;
+            top:-32px;
+            left:-9px;
+        }
+        .verticle-title{
+            
+            /* border:3px solid black; */
+            position: relative;
+            /* top:10px; */
+            display: block;
+            justify-content: flex-start;
+            align-content: center;
+            width:100%;
+            height:60px;
+        }
+        .verticle-desc{
+            position: relative;
+            /* border:3px solid black; */
+            width:100vh;
+            top:14px;
+
+        }
+        .verticle-desc ul li{
+            margin-top:1rem;
+        }
+        .vt2{
+            justify-self: flex-end;
+            /* align-items: center; */
+            /* align-self:center; */
+            /* border:3px solid black; */
+            position: relative;
+            top:-40px;
+        }
+        .firstr{
+            font-size:2rem;
+        }
+        .pro{
+            border:0;
+            background: #9c97f1;
+            height:1.3px;
+            margin:160px 84px; 
+        }
+        .proo{
+            /* border:0; */
+            background: #9c97f1;
+            position: relative;
+            top:180px;
+            /* height:1.3px;
+            margin:60px 84px;  */
+        }
+        .sectionThird{
+            /* max-width:80vw; */
+            margin:auto;
+            /* border:2px solid black; */
+            display:flex;
+            flex-wrap: wrap;
+            /* height:60vh; */
+            margin-bottom:4rem;
+            text-align: center;
+        }
+    .mainpro .itemhe1{
+            font-size:1rem;
+            margin:1rem 0;
+            color: blueviolet;
+        }
+
+    .mainpro .itemhe2 h2{
+        font-size:2rem;
+        margin:1rem 0;
+        color: rgb(27, 27, 224);
+    }
+    .sectionThird.mainpro .itemh3{
+        width:100%;    
+        height: 30px;
+        font-size:2rem;
+        /* border:3px solid white; */
+}
+        .mainpro .itemhe3 a{
+            color:black;
+            font-size:1.4rem;
+            justify-content: space-around;
+            font-weight: bolder;
+            text-decoration: none;
+            margin:0.8rem 2rem;
+            color: rgba(9, 88, 234, 0.459);
+             
+        }
+        .mainpro .itemhe3 a:hover{
+            color: rgb(27, 27, 224);
+            font-size:1.8rem;
+
+
+        }
+        .mainproject{
+            display: flex;
+            /* border:2px solid red; */
+            width:100%;
+            /* height:340px; */
+            justify-content: space-around;
+            margin:4rem 0;
+            flex-wrap:wrap;
+        }
+        .mainproject .pro1{
+            width:22%;
+            /* border:2px solid white; */
+            /* background-color:light-blue; */
+        }
+        .mainproject .pro2{
+            width:22%;
+            /* border:2px solid white;  */
+        }
+        .mainproject .pro3{
+            width:22%;
+            /* border:2px solid white; */
+        }
+        .mainproject .pro4{
+            width:22%;
+            /* border:2px solid blue; */
+        }
+        .pro1-img{
+            height:200px;
+            width:100%;
+        }
+        .mainproject proj1 div h2{
+            margin:77rem 0;
+            /* position: relative;
+            top:20;
+            color:red; */
+        }
+        .buttonpro button{
+            background-color:gray;
+            color:rgb(34, 34, 34);
+            padding:0.2rem;
+            border-radius: 6px;
+            margin:1rem 0;
+        }
+
+        header{
+            position:fixed;
+            opacity:10;
+            overflow:hidden;
+            top:0;
+            width:100%;
+        }
+        .firstSection{
+            margin:6.6rem 0;
+
+        }
+        .live-demo{
+            text-decoration: none;
+            font-size:2rem;
+            padding:0;
+        }
+        .live-demo:hover{
+            color:rgb(9, 86, 219);
+        }
+        .live-demo:active{
+            color:red;
+        }
+        .pro-title{
+            position: relative;
+            top:6;
+            margin:0.2rem 0;
+        }
+        .sectionFour{
+            max-width:80vw;
+            margin:auto;
+            /* border:2px solid black; */
+            /* height:60vh; */
+            margin-bottom:4rem;
+            text-align: center;
+            /* border:2px solid yellow; */
+            position: relative;
+            top:200px;
+        }
+        .sectionFour h5{
+            font-size:2rem;
+            margin:1rem 0;
+            color:blueviolet;
+        }
+        .sectionFour h1{
+            font-size:2.6rem;
+            margin:0.3rem 0;
+            color:rgb(39, 183, 255);
+        }
+        .mainFour{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* justify-content:flex-start; */
+            margin:1rem 0;
+        }
+        .four1{
+            height:50vh;
+            /* border:2px solid green; */
+            width:46%;
+        }
+        .four2{
+            /* height:50vh; */
+            width:46%;
+            /* border:2px solid rgb(133, 9, 46); */
+            display: block;
+        }
+        .four1in{
+            margin:1rem 0;
+            font-size:1.2rem;
+            position: relative;
+            top:40px;
+            /* text-align: center; */
+            padding:0 2.9rem;
+            justify-self: flex-start;
+
+        }
+        form{
+            display: block;
+        }
+        form input{
+            width:70%;
+            padding:0.6rem;
+            /* background-color: yellow; */
+            margin:0.6rem 0;
+        }
+        /* .sectionThird{ */
+            /* display: inline-block; */
+        /* } */
+        .four2 button{
+            padding:1rem;
+            background-color:orange;
+            border-radius:20px;
+            width:120px;
+            justify-self:flex-start;
+            position:relative;
+            right:120px;
+            top:10px;
+        }
+        .foo-pr{
+            position:relative; 
+             top:180px; 
+            margin:1rem 0;
+            margin-bottom:2rem;
+
+        }
+        footer{
+            /* border:2px solid green; */
+            position:relative;
+            top:200px;
+            text-align:center;
+        }
+        /* footer .foo1{ */
+            /* display:flex; */
+        /* } */
+        .foo1 a{
+            text-decoration:none;
+            color:white;
+            
+        }
+        /* .foolast{ */
+            /* height:10px;
+            width:10px;
+            color:white;
+            display:flex; */
+        /* } */
+        .foo1 h3{
+            font-size:1.6rem;
+            margin:1.6rem 0;
+        }
+        .foo2{
+            display:flex;
+            text-align:center;
+            justify-content:center;
+            border:3px solid green;
+        }
+        .foo2cir{
+            height:40px;
+            width:40px;
+
+            border-radius:50%;
+            /* border:3px solid green; */
+            margin:1rem 0.4rem;
+            background-color:white;
+            text-align:center;
+            justify-self:center;
+        }
+        .whatsapp{
+            height:30px;
+            width:30px;
+            align-items:center;
+            position:relative;
+            top:4px;
+            left:2px;
+        }
+        .prolastone{
+            position:relative;
+            top:160px;
+        }
+        .leftSection button{
+            padding:0.6rem;
+            border-radius:10px;
+            margin:2rem 0;
+            transition-timing-function: linear;
+            background-color:rgb(14, 42, 199);
+            color:white;
+
+            
+        }
+        .leftSection button a{
+            transition: margin 2s;
+            color:white;
+            text-decoration:none;
+
+        }
+        .leftSection button:hover{
+            /* margin:0 0; */
+            background-color:orange;
+            padding:0.9rem;
+            
+        }
+        .icon{
+         height:20px;
+          width:20px;
+           margin-right:10px;
+        }
+        .foo2{
+            border:0;
+        }
+        .servicess{
+            text-align:center;
+            font-size:2rem;
+            margin: 0 3rem;
+        }
+        .services{
+            display:flex;
+            justify-content:center;
+            /* border:2px solid white; */
+            margin:0.4rem 0;
+        }
+        .ser1{
+            /* border:2px solid yellow; */
+            justify-self:flex-start;
+            padding:0 3rem;
+            
+        }
+        .ser1 p{
+            opacity:0.4;
+            font-size:1rem;
+            padding:2rem 0;
+        }
+        .ser2 p{
+            opacity:0.4;
+            padding:2rem 0;
+            font-size:1rem;
+        }
+        .ser2{
+            /* border:2px solid yellow; */
+            padding:0 6rem;
+
+        }
+        .servicess img{
+            margin:1.3rem 0;
+            /* font-size:9rem; */
+            height:6rem;
+            width:6rem;
+        }
+        #skills {
+            /* padding: 2rem; */
+            /* position:relative; */
+            display:flex;
+
+            flex-wrap:wrap;
+            /* left:90px; */
+            /* background: ; */
+            /* height:10%; */
+            width:80%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            align-items:center;
+            /* display:inline-flex; */
+            /* height: 200px; */
+            border:2px solid whitesmoke;
+            /* text-align:center; */
+            /* margin:auto; */
+        }
+
+        /* .skill { */
+            /* margin: 1rem 0; */
+
+        /* } */
+
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: block;
+            flex-wrap:wrap;
+        }
+
+        .skill-bar {
+            background: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 20px;
+            /* border:2px solid gray; */
+            width:40%;
+
+        }
+
+        .skill-level {
+            height: 200%;
+            /* position: relative; */
+            padding:0 30rem;
+        /* margin:auto; */
+        /* align-items:center; */
+        justify-content: center;
+            transition: width 1s ease-in-out; /* Animation for width change */
+        }
+
+        .html {
+            background: #e44d26; /* HTML color */
+        }
+
+        .css {
+            background: #2965f1; /* CSS color */
+        }
+
+        .js {
+            background: #f7df1e; /* JavaScript color */
+        }
+
+        
+        .C{
+            background:rgb(32, 23, 156); /* React color */
+        }
+        /* .C++{
+            background:rgb(10,22,90); /* React color */
+        } */
+        .Java{
+            background:rgb(64, 171, 22); /* React color */
+            display: flex;
+        }
+        .Python{
+            display: flex;
+            background:rgb(84, 13, 81); /* React color */
+            border: 33px solid blueviolet;
+        }
+        .Sql{
+            display: flex;
+            background:rgb(89, 135, 40); /* React color */
+        }
+        .proskill{
+            /* background-color:green; */
+            margin:6rem;
+            height:3px;
+        }
+        .iim{
+            background-color: blue;
+            /* height:30px; */
+        }
+        .mainskill{
+            height:100px;
+            border:2px solid greenyellow;
+            display: flex;
+            flex-wrap:wrap;
+            /* overflow: auto; */
+        }
+        .mainskill2{
+            width:100%;
+            display: block;
+            border:20px solid green;
+        }
+            </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jaiprakash Portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#sk">
+                        <li>About</li>
+                    </a>
+                    <a href="#se">
+                        <li>Services</li>
+                    </a>
+                    <a href="#port">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="#emailss">
+                        <li>Contact</li>
+                    </a>
+                    <a href="#ex">
+                        <li>Experience</li>
+                    </a>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi My name is <span class="purple">Jaiprakash</span>
+                <div>and i am a passionate Web Developer </div>
+                <span id="element"></span>
+<br>
+                <button onclick="alert('Send email for me')"> <a href="#emailss" >Hire Me</a></button>
+                <button> <a href="Latest_resume.pdf">Download C.V</a></button>
+            </div>
+            <div class="rightSection">
+                <img src="images/myimage.jpeg"  class="iim" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="ex">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="verticle">
+                    <!-- <img src="my image.jpeg" class="image-top" alt=""> -->
+                    <div class="verticle-title">O.V Technology <br><div class="firstr">Web Developer </div><div class="vt2"> &nbsp; (Intership-6 Month)</div></div>
+                    <div class="verticle-desc">
+                        <h3>Key Responsibility</h3>
+                        <ul>
+                            <li><b>Design and Development:</b>Collaborate with clients to design and layout websites. Create graphics icons , and images using design software.Write HTML, CSS and JavaScript code for websites.</li>
+                            <li><b>Maintenance and Updates:- Perform regular websites update and maintenance.</b></li>
+                            <li><b>Team Colaboration :- </b> Collaborate with design teams on design concept and prototypes work with developmnet teams on website Development</li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        <hr class="pro"> 
+        <section class="servicess" id="se">
+            <h4> My Expertise</h4>
+            <h1>Provide wide Range of <br> Digital Services</h1>
+        <div class="services">
+            <div class="ser1"><img src="images/service-icon1.png">
+            <h4 style="margin: 0 ;">Web Design</h4>
+            <p>A web designer is a professional responsible for creating the visual design and layout of websites. They focus on the aesthetics, user experience (UX), and usability of a site. Their job includes designing webpage elements such as colors, fonts, images, and navigation to ensure a website is visually appealing and easy to use. Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam.</p>
+            <!-- <br> -->
+        <a href="#" style="text-decoration:none; font-size:1.4rem; margin:1rem 0;">Read More</a>
+    </div>
+    <div class="ser2">
+        <img src="images/service-icon2.png">
+        <h4 style="margin: 0 ;">Web Development</h4>
+        <p>Web development refers to the process of building, creating, and maintaining websites or web applications. It involves coding and programming to develop the functionality and interactivity of a website. Web development can range from simple static web pages to complex dynamic applications with databases and advanced features.</p>
+        <a href="#" style="text-decoration:none; font-size:1.4rem; margin:1rem 0;">Read More</a>
+    </div>
+        </div>
+        </section>
+
+        <hr class="proskill" id="sk"> 
+        <h2 style="text-align:center; padding:0; margin:1rem; width:80%; position:relative; left:130px; top:0; margin:2rem 0;  font-size:2rem; ">My Skills</h2>
+        <section id="skills" >
+            <div class="mainskill">
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-level html" style="width: 99%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-level css" style="width: 86%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-level js" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="mainskill2">
+            <div class="skill">
+                <div class="skill-name">C</div>
+                <div class="skill-bar">
+                    <div class="skill-level C" style="width: 80%;"></div>
+                </div>
+            <div class="skill">
+                <div class="skill-name">C++</div>
+                <div class="skill-bar">
+                    <div class="skill-level C++" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Sql</div>
+                <div class="skill-bar">
+                    <div class="skill-level Sql" style="width: 50%;"></div>
+                </div>
+            <div class="skill">
+                <div class="skill-name">Java</div>
+                <div class="skill-bar">
+                    <div class="skill-level Java" style="width: 70%;"></div>
+                </div>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-level Python" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+        <hr class="pro"> 
+        <section class="sectionThird" id="port">
+            <div class="mainpro">
+                <div class="itemhe1"><p style="font-size: 1.3rem;">Creative work</p></div>
+                <div class="itemhe2"><h2>Check My Portfolio</h2></div>
+                <div class="itemhe3"> <a href="">All</a> <a href="">E-Commerce</a> <a href="">Games</a></div>
+            </div>
+            <div class="mainproject">
+                <div class="pro1"><img src="images/flipkart.png" class="pro1-img" alt="">
+                <div><h2 class="pro-title">FlipKart  Clone Website</h2>
+                </div>
+                <div class="buttonpro">
+                    <button>Html</button>
+                    <button>CSS</button>
+                    <button>Java-script</button>
+
+                </div>
+                <div><a href="flipkart/index.html" class="live-demo">Live Demo</a></div>
+                </div>
+                <div class="pro2">
+                    <img src="images/spotify.jpg" class="pro1-img" alt="">
+                <div><h2 class="pro-title">Simply Clone-Website</h2>
+                </div>
+                <div class="buttonpro">
+                    <button>Html</button>
+                    <button>CSS</button>
+                    <button>Java-script</button>
+
+                </div>
+                <div><a href="Spotify website/index.html" class="live-demo">Live Demo</a></div>
+
+                </div>
+                <div class="pro3">
+                    <img src="images/sicon_game.jpg" class="pro1-img" alt="">
+                <div><h2 class="pro-title">Simcon Game </h2>
+                </div>
+                <div class="buttonpro">
+                    <button>Html</button>
+                    <button>CSS</button>
+                    <button>Java-script</button>
+
+                </div>
+                <div><a href="Simcon game/index.html" class="live-demo">Live Demo</a></div>
+
+                </div>
+                <div class="pro4">
+                    <img src="images/tictactoe.png" class="pro1-img" alt="">
+                <div><h2 class="pro-title">Tic-Toc-Toe Game </h2>
+                </div>
+                <div class="buttonpro">
+                    <button>Html</button>
+                    <button>CSS</button>
+                    <button>Java-script</button>
+
+                </div>
+                <div><a href="tic toe tac game/new.html" class="live-demo">Live Demo</a></div>
+                </div>
+            </div>
+        </section>
+        <hr class="proo">
+        <section class="sectionFour" id="emailss">
+
+             <h5>Get in Touch</h5>
+             <h1>Any Question? Feel Free to Contact</h1>
+             <div class="mainFour">
+                <div class="four1">
+                    <p class="four1in"><img width="48" height="48" class="icon" src="https://img.icons8.com/fluency/48/marker.png" alt="marker"/>318 Goutam Nagar Tonk Road Jaipur 302015 Rajasthan </p>
+                    <p class="four1in" ><img width="50" height="50" class="icon" src="https://img.icons8.com/color/50/phone.png" alt="phone"/>+91 9588229732 </p>
+                    <p class="four1in" ><img width="50" height="50" src="https://img.icons8.com/color/50/new-post.png" class="icon" alt="new-post"/>Jaiprakashbairwa777@gmail.com</p>
+                </div>
+                <div class="four2">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Name">
+                        <input type="email" name="" id="emailss"  placeholder="E-Mail">
+                        <input type="number" name="" id=""  placeholder="Mobile no">
+                        <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Address" style="padding:0.5rem;"></textarea>
+                        <!-- <input type="button" name="" id="" placeholder="Name"> -->
+                         <br>
+                         <button>Submit</button>
+                    </form>
+                </div>
+             </div>
+        </section>
+        <hr class="foo-pr">
+
+
+        <footer>
+            <div class="foo1"><h3>Portfolio</h3></div>
+            <div class="foo1">
+                <a href="#">Home </a>&nbsp |
+                <a href="#">About </a>&nbsp |
+                <a href="#">Services </a>&nbsp |
+                <a href="#">Portfolio</a>&nbsp |
+                <a href="#">Blog</a>&nbsp |
+                                <a href="#">Blog</a>
+            </div>
+            <div class="foo2"><div class="foo2cir"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/whatsapp--v1.png" class="whatsapp" alt="whatsapp--v1"/></div> 
+            <div class="foo2cir"><img width="50" height="50" src="https://img.icons8.com/ios/50/globe--v1.png" class="whatsapp" alt="globe--v1"/></div> 
+            <div class="foo2cir"><img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/telegram.png" class="whatsapp" alt="telegram"/></div></div>
+            <div class="foo3"></div>
+        </footer>
+        <hr class="prolastone">
+<p style="text-align:center; position:relative; top:150px; margin-bottom:12rem;">Copyright 2022 Portfolio | All Rights Reserved.</p>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web Developer</i>.', '&amp; Web Designer.'],
+            typeSpeed: 50,
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            const skills = document.querySelectorAll('.skill-level');
+            
+            // Function to add the animated width
+            function animateSkills() {
+                skills.forEach(skill => {
+                    const width = skill.style.width; // Get the width from inline style
+                    skill.style.width = '0'; // Set to 0 for animation
+                    setTimeout(() => {
+                        skill.style.width = width; // Animate to the original width
+                    }, 100); // Delay to allow for the transition
+                });
+            }
+
+            // Check if skills section is in view
+            const skillsSection = document.getElementById('skills');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateSkills();
+                        observer.unobserve(skillsSection); // Stop observing after animation
+                    }
+                });
+            });
+
+            observer.observe(skillsSection); // Start observing the skills section
+        });
+        let body=document.querySelector("body");
+        if(body.width<500px){
+            alert("Please on your Desktop mode");
+        }
+    
+    </script>
+</body>
+
+</html>

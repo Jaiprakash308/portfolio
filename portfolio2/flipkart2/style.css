@@ -1,0 +1,811 @@
+/* Universal Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Added for easier box model management */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(211, 211, 211, 0.315);
+}
+
+.container {
+    width: 100%;
+}
+
+/* Header Styles */
+.headers {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center; /* Vertically align items */
+    padding: 10px 20px;
+    background-color: white;
+    top: 0;
+    z-index: 1000; /* Ensure header stays on top */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added subtle shadow */
+}
+
+.flip {
+    display: flex;
+    flex-direction: column; /* Stack logo and text */
+    align-items: center;
+    margin-right: 20px;
+}
+
+.flip img {
+    height: 24px; /* Adjusted logo size */
+}
+
+.exp {
+    color: lightslategray;
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.exp span {
+    color: rgb(246, 246, 3);
+    font-weight: bold;
+}
+
+.search-bar { /* New class to group search icon and input */
+    display: flex;
+    flex-grow: 1; /* Allow search bar to take available space */
+    max-width: 600px; /* Limit search bar width on large screens */
+}
+
+.se {
+    height: 40px;
+    width: 40px;
+    background-color: ghostwhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 4px; /* Adjusted radius for search icon */
+    border-bottom-left-radius: 4px;
+    font-size: 18px;
+    color: gray;
+}
+
+.inp {
+    flex-grow: 1; /* Allow input to take available space */
+    height: 40px;
+    border: none;
+    background-color: ghostwhite;
+    padding: 0 10px;
+    font-size: 16px;
+    border-top-right-radius: 4px; /* Adjusted radius for input */
+    border-bottom-right-radius: 4px;
+    outline: none; /* Remove outline on focus */
+}
+
+.us, .carts, .shop {
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    /* align-items: center;
+    text-align: center; */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+@media(max-width:400px){
+    .us, .carts, .shop ,#login-options {
+        align-items: center;
+        /* display: block; */
+        /* border:2px solid black; */
+        width:100%;
+        text-align: center;
+        /* align-se */
+        /* text-align: center; */
+        /* margin:0 auto; */
+        /* visibility: hidden; */
+        /* justify-content: center; */ */
+
+    }
+    .cart2,.seller{
+        text-align: center;
+    }
+
+}
+
+#login-options, .category-select { /* Renamed from #cars to be more descriptive */
+    margin-left: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px;
+    outline: none;
+}
+
+.carts2, .seller {
+    font-size: 16px;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+/* Items Section (Top Categories) */
+#items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    width: 95%;
+    margin: 100px auto 20px auto; /* Adjusted margin for fixed header */
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.box-item { /* Unified class for all category boxes */
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    margin: 5px; /* Added margin for spacing */
+}
+
+.imgg {
+    height: 64px; /* Adjusted image size */
+    width: 64px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.cont p, .cont select {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Slider */
+.slider {
+    height: 200px;
+    width: 95%; /* Adjust width to match #items */
+    margin: 10px auto;
+    background-image: url('back.webp'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+/* Main Product Boxes Section */
+.mainbox {
+    display: flex;
+    flex-wrap: wrap; /* Allow main boxes to wrap */
+    justify-content: space-evenly;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.boxes {
+    width: 78%; /* Adjusted width for better responsiveness, leaving space for boxes1 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.mains h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.product-box { /* Unified class for all product display boxes */
+    width: 18%; /* Adjusted for 5 boxes per row */
+    margin: 10px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden; /* Hide overflow for images */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 120px; /* Minimum width for product boxes */
+}
+
+.child1 {
+    height: 120px; /* Adjusted image height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.chi-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.child2 {
+    padding: 10px;
+}
+
+.pp {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.boll {
+    font-weight: bold;
+    color: green; /* Emphasize price */
+}
+
+.boxes1 {
+    width: 20%; /* Adjusted width for better responsiveness */
+    background-color: #003cff; /* Example background */
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px; /* Spacing from the main product boxes */
+}
+
+.chill-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Big Section with Multiple Items (e.g., Daily Deals) */
+.big {
+    height: auto; /* Allow height to adjust */
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.itemsmains {
+    display: flex;
+    flex-direction: column;
+    width: 70%; /* Adjusted width */
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.items-row { /* New class for rows of small product items */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.bigimg {
+    width: 25%; /* Adjusted width */
+    background-color: blue;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bakimgg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Description Section */
+.description {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: gray;
+    line-height: 1.6;
+}
+
+.description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.description b {
+    color: #333;
+}
+
+.linkes {
+    color: #007bff; /* Blue for links */
+    text-decoration: none;
+}
+
+.linkes:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+#foomain { /* Container for footer sections */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.823);
+    color: white;
+    padding-top: 30px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 20px 30px 20px; /* Adjusted padding */
+}
+
+.foo {
+    width: 18%; /* Adjusted width for footer columns */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between rows on smaller screens */
+    min-width: 150px; /* Ensure minimum width for readability */
+}
+
+.main_head {
+    color: gray;
+    margin-bottom: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.foo p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.medium { /* Vertical separator */
+    height: 180px; /* Adjusted height */
+    width: 1px;
+    background-color: grey;
+    margin: 20px 0; /* Add vertical margin */
+}
+
+.icons-1 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.icons-1 p {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.icons {
+    font-size: 18px;
+    margin-right: 10px;
+    color: white;
+}
+
+.lastka { /* Horizontal separator */
+    width: 95%;
+    background-color: grey;
+    height: 1px;
+    margin: 20px auto; /* Centered horizontal rule */
+}
+
+.last {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.boxl {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.boxl i, .boxl img {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.lastiim {
+    height: 20px;
+    width: auto;
+}
+
+/* Media Queries */
+
+/* Tablets and larger phones (max-width: 992px) */
+@media (max-width: 992px) {
+    .headers {
+        padding: 10px;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center; /* Center header items */
+    }
+
+    .flip {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .search-bar {
+        width: 95%;
+        margin-bottom: 10px;
+        max-width: 100%; /* Allow full width */
+    }
+
+    .se, .inp {
+        height: 38px; /* Slightly smaller input */
+        font-size: 15px;
+    }
+
+    .us, #login-options, .carts, .carts2, .shop, .seller {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    #items {
+        margin-top: 150px; /* Adjust for header height */
+        justify-content: center;
+        width: 98%; /* Take more width */
+    }
+
+    .box-item {
+        width: 120px; /* Slightly larger for better tap targets */
+        margin: 5px;
+    }
+
+    .slider {
+        width: 98%;
+    }
+
+    .mainbox {
+        flex-direction: column; /* Stack main product section and side image */
+        align-items: center;
+    }
+
+    .boxes {
+        width: 98%; /* Take full width on tablets */
+        margin: 0 auto 20px auto;
+    }
+
+    .product-box {
+        width: 30%; /* 3 boxes per row */
+        min-width: 150px;
+        margin: 8px;
+    }
+
+    .boxes1 {
+        width: 98%; /* Full width on tablets */
+        margin-left: 0;
+        margin-top: 20px;
+        height: 200px;
+    }
+
+    .big {
+        flex-direction: column; /* Stack big sections vertically */
+        align-items: center;
+        width: 98%;
+    }
+
+    .itemsmains {
+        width: 98%; /* Full width on tablets */
+        padding: 10px;
+    }
+
+    .items-row .box-item {
+        width: 45%; /* 2 boxes per row for the smaller items */
+        margin: 5px;
+    }
+
+    .bigimg {
+        width: 98%; /* Full width on tablets */
+        margin-left: 0;
+        margin-top: 20px;
+        height: 250px;
+    }
+
+    .description {
+        width: 98%;
+        padding: 15px;
+    }
+
+    footer {
+        padding: 20px;
+        justify-content: space-between; /* Adjust spacing */
+    }
+
+    .foo {
+        width: 48%; /* Two columns in footer */
+        padding: 10px;
+        text-align: left; /* Align text to left */
+        margin-bottom: 20px;
+    }
+    .foo p {
+        font-size: 13px;
+    }
+    .medium {
+        display: none; /* Hide vertical separator for better responsiveness */
+    }
+    .lastka {
+        width: 98%;
+    }
+    .last {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 98%;
+        padding: 10px 0;
+    }
+    .boxl {
+        width: auto; /* Auto width */
+        margin: 5px 15px; /* Spacing */
+    }
+}
+
+/* Mobile phones (max-width: 599px) */
+@media (max-width: 599px) {
+    .headers {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+        align-items: flex-start; /* Align header items to start */
+    }
+
+    .flip {
+        margin-bottom: 10px;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    .se, .inp {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .us, #login-options, .carts, .carts2, .shop, .seller {
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+    .carts2, .seller {
+        display: none; /* Hide text to save space on very small screens */
+    }
+    #login-options {
+        margin-left: 5px; /* Adjust spacing */
+    }
+
+    #items {
+        margin-top: 180px; /* Adjust for taller header */
+        padding: 5px 0;
+        width: 100%;
+    }
+
+    .box-item {
+        width: 80px; /* Smaller boxes */
+        padding: 5px 0;
+        margin: 3px;
+    }
+    .imgg {
+        height: 50px;
+        width: 50px;
+    }
+    .cont p, .cont select {
+        font-size: 12px;
+    }
+
+    .slider {
+        height: 150px;
+        width: 100%;
+    }
+
+    .boxes {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .mains h2 {
+        font-size: 20px;
+    }
+
+    .product-box {
+        width: 45%; /* 2 boxes per row on smaller screens */
+        margin: 5px;
+        min-width: unset; /* Remove min-width to allow shrinking */
+    }
+    .child1 {
+        height: 100px;
+    }
+    .pp {
+        font-size: 12px;
+    }
+    .boll {
+        font-size: 13px;
+    }
+
+    .boxes1 {
+        height: 150px;
+        width: 100%;
+    }
+
+    .big {
+        width: 100%;
+    }
+    .itemsmains {
+        width: 100%;
+    }
+    .items-row .box-item {
+        width: 48%; /* Adjust for very small screens, keep 2 per row */
+        margin: 2px;
+    }
+
+    .bigimg {
+        width: 100%;
+        height: 200px;
+    }
+
+    .description {
+        width: 100%;
+        padding: 10px;
+    }
+    .description h2 {
+        font-size: 18px;
+    }
+    .description p {
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    .foo {
+        width: 100%; /* Each footer column takes full width */
+        text-align: center;
+        padding: 10px 0;
+        min-width: unset;
+    }
+    .foo p {
+        font-size: 13px;
+    }
+    .main_head {
+        font-size: 11px;
+    }
+
+    .icons-1 {
+        justify-content: center;
+    }
+
+    .last {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .boxl {
+        margin: 5px;
+        width: auto;
+    }
+
+    .lastiim, .lastbox6 { /* Hide the last image and its container if needed */
+        display: none;
+    }
+    .lastbox5{
+        display: none; /* Hiding copyright info on smallest screens */
+    }
+}
+
+/* Extra small screens (e.g., 320px - 400px) */
+@media (max-width: 400px) {
+    .flip img {
+        height: 20px;
+    }
+    .exp {
+        font-size: 8px;
+    }
+    .us, .carts, .shop {
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    #login-options {
+        font-size: 10px;
+    }
+
+    #items {
+        margin-top: 140px; /* Adjust for header height */
+    }
+
+    .box-item {
+        width: 70px;
+        font-size: 11px;
+    }
+    .imgg {
+        height: 40px;
+        width: 40px;
+    }
+
+    .slider {
+        height: 120px;
+    }
+
+    .mains h2 {
+        font-size: 18px;
+    }
+
+    .product-box {
+        width: 48%; /* Keep 2 per row */
+        margin: 3px;
+    }
+    .child1 {
+        height: 80px;
+    }
+    .pp {
+        font-size: 11px;
+    }
+    .boll {
+        font-size: 12px;
+    }
+
+    .boxes1 {
+        height: 120px;
+    }
+
+    .bigimg {
+        height: 180px;
+    }
+
+    .description h2 {
+        font-size: 16px;
+    }
+    .description p {
+        font-size: 12px;
+    }
+
+    .foo p {
+        font-size: 12px;
+    }
+    .main_head {
+        font-size: 10px;
+    }
+
+    .last {
+        font-size: 12px;
+    }
+    .boxl i, .boxl img {
+        font-size: 16px;
+    }
+}

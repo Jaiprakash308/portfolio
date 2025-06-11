@@ -1,0 +1,59 @@
+
+body{
+   text-align: center;
+    background-color: cadetblue;
+}
+
+.button-container{
+   display: flex;
+   justify-content: center;
+}
+.box{
+    height:150px;
+    width:150px;
+    border-radius: 20%;
+    border:10px solid black;
+    margin: 2.5rem;
+}
+
+.red{
+    background-color: rgb(215, 38, 68);
+}
+.skyblue{
+    background-color: skyblue;
+}
+.orange{
+    background-color: orange;
+}
+.lightgray{
+    background-color: lightgray;
+}
+.flash{
+    background-color:white;
+}
+.redalert{
+    background-color: red;
+}
+
+.score{ 
+    height: 30px;
+    justify-content: flex-end;
+    align-content: center;
+    color: blue;
+    width: 100%;
+    text-transform: capitalize;
+    display: flex;
+}
+h3{
+    display: flex;
+    justify-self: flex-end;
+    position: fixed;
+    top:0;
+    margin: 0;
+}
+p{
+    font-size: 1rem;
+    font-weight: bolder;
+    justify-self: center;
+    width: 100%;
+}
